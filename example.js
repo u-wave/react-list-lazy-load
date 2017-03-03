@@ -5,7 +5,7 @@ import LazyList from 'react-list-lazy-load'
 import ReactList from 'react-list'
 
 const randBetween = (min, max) =>
-  Math.floor(min + Math.random() * (max - min))
+  Math.floor(min + (Math.random() * (max - min)))
 
 // Utility to create arrays with test data
 const array = (len, val = () => null) => {
@@ -41,7 +41,7 @@ class App extends Component {
     const { minLoadTime, maxLoadTime, pageSize } = this.props
     setTimeout(() => {
       // Generate a new page of items
-      const data = array(pageSize, (i) => `item #${page * pageSize + i}`)
+      const data = array(pageSize, (i) => `item #${(page * pageSize) + i}`)
 
       cb(data)
     }, randBetween(minLoadTime, maxLoadTime))
