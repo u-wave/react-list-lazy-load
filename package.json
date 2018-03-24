@@ -26,11 +26,11 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^7.0.0-beta.2",
     "babel-preset-es2015": "^7.0.0-beta.2",
     "babel-preset-react": "^7.0.0-beta.2",
-    "browserify": "^14.4.0",
+    "browserify": "^16.1.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-list": "^0.8.8",
-    "standard": "^10.0.3"
+    "standard": "^11.0.1"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",

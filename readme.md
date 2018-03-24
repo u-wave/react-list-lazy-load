@@ -1,5 +1,7 @@
 # react-list-lazy-load
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/u-wave/react-list-lazy-load.svg)](https://greenkeeper.io/)
+
 Lazy Loading <abbr title="Higher Order Component">HOC</abbr> Wrapper for
 [React-List](https://github.com/orgsync/react-list).
 
