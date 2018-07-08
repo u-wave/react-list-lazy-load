@@ -20,11 +20,11 @@
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.51",
+    "@babel/cli": "7.0.0-beta.52",
     "@babel/core": "7.0.0-beta.52",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.51",
-    "@babel/preset-env": "7.0.0-beta.51",
-    "@babel/preset-react": "7.0.0-beta.51",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.52",
+    "@babel/preset-env": "7.0.0-beta.52",
+    "@babel/preset-react": "7.0.0-beta.52",
     "babel-eslint": "^8.2.3",
     "browserify": "^16.2.2",
     "react": "^16.3.2",
