@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.52",
     "@babel/core": "7.0.0-beta.52",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.52",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.53",
     "@babel/preset-env": "7.0.0-beta.52",
     "@babel/preset-react": "7.0.0-beta.52",
     "babel-eslint": "^8.2.3",
