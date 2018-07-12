@@ -11,7 +11,7 @@
     "build:lib": "babel --out-dir lib es --no-babelrc --plugins @babel/transform-modules-commonjs",
     "example": "babel --plugins @babel/transform-modules-commonjs example.js | browserify - --debug -r ./:react-list-lazy-load -o example.build.js",
     "test": "standard index.js example.js src/**/*.js",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "Renée Kooi <renee@kooi.me>",
