@@ -1,7 +1,22 @@
 # react-list-lazy-load
 
-Lazy Loading <abbr title="Higher Order Component">HOC</abbr> Wrapper for
-[React-List](https://github.com/orgsync/react-list).
+Lazy Loading wrapper for [React-List](https://github.com/orgsync/react-list).
+
+This component works for finite collections only. If you have a large list of a
+known size that you do not want to load all at once, this component allows
+loading pages once the user scrolls near them. It does **not** implement
+infinite scrolling.
+
+[![npm][npm-image]][npm-url]
+[![travis][travis-image]][travis-url]
+[![size][size-image]][size-url]
+
+[npm-image]: https://img.shields.io/npm/v/react-list-lazy-load.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/react-list-lazy-load
+[travis-image]: https://img.shields.io/travis/u-wave/react-list-lazy-load.svg?style=flat-square
+[travis-url]: https://travis-ci.org/u-wave/react-list-lazy-load
+[size-image]: https://img.shields.io/bundlephobia/minzip/react-list-lazy-load.svg?style=flat-square
+[size-url]: https://bundlephobia.com/result?p=react-list-lazy-load
 
 ## Installation
 
@@ -9,13 +24,15 @@ Lazy Loading <abbr title="Higher Order Component">HOC</abbr> Wrapper for
 npm install --save react-list-lazy-load
 ```
 
+> :warning: At the moment, react-list-lazy-load only works with react-list
+> versions up to v0.8.9. Versions v0.8.10 and up are not yet supported.
+
 ## Usage
 
 [Demo](https://u-wave.github.io/react-list-lazy-load) - [Demo source code](./example.js)
 
-React List Lazy Load is a higher order component, so you wrap it around a
-`<ReactList />` element to :sparkles: magically :sparkles: add lazy loading
-hooks.
+You wrap it around a `<ReactList />` element to :sparkles: magically :sparkles:
+add lazy loading hooks:
 
 ```js
 import ReactList from 'react-list';
