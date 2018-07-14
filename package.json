@@ -2,14 +2,12 @@
   "name": "react-list-lazy-load",
   "version": "1.1.1",
   "description": "Lazy loading wrapper for react-list.",
-  "main": "index.js",
+  "main": "lib/LazyList.js",
   "module": "es/LazyList.js",
   "repository": "u-wave/react-list-lazy-load",
   "scripts": {
-    "build": "npm run build:es && npm run build:lib",
-    "build:es": "babel --out-dir es src",
-    "build:lib": "babel --out-dir lib es --no-babelrc --plugins @babel/transform-modules-commonjs",
-    "example": "babel --plugins @babel/transform-modules-commonjs example.js | browserify - --debug -r ./:react-list-lazy-load -o example.build.js",
+    "build": "rollup -c",
+    "example": "cross-env EXAMPLE=1 browserify example.js -t babelify --debug -r ./:react-list-lazy-load -o example.build.js",
     "test": "standard index.js example.js src/**/*.js",
     "prepare": "npm run build"
   },
@@ -20,16 +18,19 @@
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.53",
     "@babel/core": "7.0.0-beta.53",
     "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.53",
     "@babel/preset-env": "7.0.0-beta.53",
     "@babel/preset-react": "7.0.0-beta.53",
     "babel-eslint": "^8.2.3",
+    "babelify": "^9.0.0",
     "browserify": "^16.2.2",
+    "cross-env": "^5.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-list": "^0.8.8 < 0.8.10",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^4.0.0-beta.7",
     "standard": "^11.0.1"
   },
   "peerDependencies": {
