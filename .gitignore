@@ -1,5 +1,4 @@
-/lib
-/es
+/dist
 /node_modules
 /example.build.js
 package-lock.json
