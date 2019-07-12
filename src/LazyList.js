@@ -18,7 +18,7 @@ const proxyMethods = [
 ]
 
 function requestPage (call, page, cb) {
-  let promise = call(page, cb)
+  const promise = call(page, cb)
   if (promise && promise.then) {
     promise
       .then((res) => cb(null, res))
@@ -113,7 +113,7 @@ class LazyList extends React.Component {
       if (item == null) {
         const page = Math.floor((topItem + idx) / pageSize)
         if (!this.isLoadingPage(page) && pages.indexOf(page) === -1) {
-          return [ ...pages, page ]
+          return [...pages, page]
         }
       }
       return pages
