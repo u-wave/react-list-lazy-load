@@ -28,7 +28,7 @@
     "cross-env": "^7.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-list": "^0.8.8 < 0.8.10",
+    "react-list": "^0.8.8 < 0.8.10 || ^0.8.10",
     "rollup": "^1.0.0",
     "rollup-plugin-babel": "^4.0.2",
     "standard": "^14.0.0"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.0 || ^ 15.0.0 || ^16.0.0",
-    "react-list": "^0.7.0 || ^0.8.0 < 0.8.10"
+    "react-list": "^0.7.0 || ^0.8.0 < 0.8.10 || ^0.8.10"
   },
   "standard": {
     "parser": "babel-eslint"
