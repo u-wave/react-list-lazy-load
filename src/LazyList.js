@@ -16,7 +16,7 @@ const proxyMethods = [
   'getVisibleRange'
 ]
 
-function requestPage(call, page, cb) {
+function requestPage (call, page, cb) {
   const promise = call(page, cb)
   if (promise && promise.then) {
     promise
@@ -31,7 +31,7 @@ function requestPage(call, page, cb) {
  * [0, 1].slice(1, 3) === [1]
  * eagerSlice([0, 1], 1, 3) === [1, undefined, undefined]
  */
-function eagerSlice(list, start, end) {
+function eagerSlice (list, start, end) {
   const sliced = []
   for (let i = start; i < end; i++) {
     sliced.push(list[i])
@@ -43,7 +43,7 @@ function eagerSlice(list, start, end) {
  * Adds simple lazy loading to react-list.
  */
 class LazyList extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this._list = null
@@ -51,20 +51,20 @@ class LazyList extends React.Component {
     this.updateFrame = this.updateFrame.bind(this)
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.updateScrollParent()
     this.updateFrame()
   }
 
-  componentDidUpdate() {
+  componentDidUpdate () {
     this.updateScrollParent()
     this.updateFrame()
   }
 
-  updateScrollParent() {
-    const prev = this.scrollParent;
-    const list = this.getList();
-    this.scrollParent = list.scrollParent;
+  updateScrollParent () {
+    const prev = this.scrollParent
+    const list = this.getList()
+    this.scrollParent = list.scrollParent
 
     if (prev === this.scrollParent) {
       return
@@ -77,21 +77,21 @@ class LazyList extends React.Component {
     }
   }
 
-  getList() {
+  getList () {
     return this._list
   }
 
-  isLoadingPage(page) {
+  isLoadingPage (page) {
     return !!this._loadingPages[page]
   }
 
-  itemNeedsLoad(idx) {
+  itemNeedsLoad (idx) {
     const { items, pageSize } = this.props
     const page = Math.floor(idx / pageSize)
     return items[idx] != null || this.isLoadingPage(page)
   }
 
-  updateFrame() {
+  updateFrame () {
     const {
       pageSize, loadMargin,
       items, length,
@@ -130,7 +130,7 @@ class LazyList extends React.Component {
     })
   }
 
-  render() {
+  render () {
     return React.cloneElement(this.props.children, {
       ref: (list) => {
         this._list = list
