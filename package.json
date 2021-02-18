@@ -15,22 +15,22 @@
   "author": "Renée Kooi <renee@kooi.me>",
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.12.17",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
     "@rollup/plugin-babel": "^5.3.0",
     "babelify": "^10.0.0",
-    "browserify": "^16.2.2",
-    "cross-env": "^7.0.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-list": "^0.8.8 < 0.8.10 || ^0.8.10",
-    "rollup": "^1.0.0",
-    "standard": "^14.0.0"
+    "browserify": "^17.0.0",
+    "cross-env": "^7.0.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-list": "^0.8.16",
+    "rollup": "^2.0.0",
+    "standard": "^14.3.4"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
