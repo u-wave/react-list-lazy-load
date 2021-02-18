@@ -81,7 +81,9 @@ class App extends React.Component {
                 #{index}
                 <strong>{items[index]}</strong>
               </div>
-            ) : <div key={key}>Loading …</div>
+            ) : (
+              <div key={key}>Loading …</div>
+            )
           )}
         />
       </LazyList>

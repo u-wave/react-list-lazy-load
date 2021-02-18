@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rollup -c",
     "example": "cross-env EXAMPLE=1 browserify example.js -t babelify --debug -r ./:react-list-lazy-load -o example.build.js",
-    "test": "standard index.js example.js src/**/*.js",
+    "test": "standard example.js src/**/*.js",
     "prepare": "npm run build"
   },
   "keywords": [],
@@ -22,7 +22,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.0",
+    "@rollup/plugin-babel": "^5.3.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.2",
     "cross-env": "^7.0.0",
@@ -30,15 +30,11 @@
     "react-dom": "^16.3.2",
     "react-list": "^0.8.8 < 0.8.10 || ^0.8.10",
     "rollup": "^1.0.0",
-    "rollup-plugin-babel": "^4.0.2",
     "standard": "^14.0.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.0 || ^ 15.0.0 || ^16.0.0",
     "react-list": "^0.7.0 || ^0.8.0 < 0.8.10 || ^0.8.10"
-  },
-  "standard": {
-    "parser": "babel-eslint"
   }
 }

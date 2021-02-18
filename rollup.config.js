@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
 
 const meta = require('./package.json')
 
@@ -12,6 +12,6 @@ export default {
   external: Object.keys(meta.dependencies)
     .concat(Object.keys(meta.peerDependencies)),
   plugins: [
-    babel()
+    babel({ babelHelpers: 'bundled' })
   ]
 }
