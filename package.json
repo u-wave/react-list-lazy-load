@@ -1,9 +1,9 @@
 {
   "name": "react-list-lazy-load",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Lazy loading wrapper for react-list.",
   "main": "dist/react-list-lazy-load.js",
-  "module": "dist/react-list-lazy-load.mjs",
+  "module": "dist/react-list-lazy-load.es.js",
   "repository": "u-wave/react-list-lazy-load",
   "scripts": {
     "build": "rollup -c",
