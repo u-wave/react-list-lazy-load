@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 const proxyMethods = [
   'getOffset',
-  'getScrollParent',
   'getScroll',
   'setScroll',
   'getViewportSize',
@@ -64,7 +63,9 @@ class LazyList extends React.Component {
 
   updateScrollParent () {
     const prev = this.scrollParent
-    this.scrollParent = this.getScrollParent()
+    const list = this.getList()
+    this.scrollParent = list.scrollParent
+
     if (prev === this.scrollParent) {
       return
     }

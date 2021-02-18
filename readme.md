@@ -24,9 +24,6 @@ infinite scrolling.
 npm install --save react-list-lazy-load
 ```
 
-> :warning: At the moment, react-list-lazy-load only works with react-list
-> versions up to v0.8.9. Versions v0.8.10 and up are not yet supported.
-
 ## Usage
 
 [Demo](https://u-wave.github.io/react-list-lazy-load) - [Demo source code](./example.js)
