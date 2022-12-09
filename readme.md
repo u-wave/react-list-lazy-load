@@ -1,5 +1,7 @@
 # react-list-lazy-load
 
+> **Unmaintained**. Consider using [react-virtual](https://github.com/tanstack/virtual).
+
 Lazy Loading wrapper for [React-List](https://github.com/orgsync/react-list).
 
 This component works for finite collections only. If you have a large list of a
